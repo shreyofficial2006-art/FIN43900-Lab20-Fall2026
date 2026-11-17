@@ -1,0 +1,21 @@
+# Maple Education Fund decision memo
+
+**Pilot in a paper portfolio and defer implementation.** At the 6.50% net annual target, the five-point grid selects 55% BIL / 45% VT with a 6.76% modeled net return and 7.04% annualized volatility. For monitoring, use an illustrative 50–55% BIL and 45–50% VT range from the baseline and the one-point BIL estimate stress. Each pair must total 100%. The range describes these scenarios and should not be treated as a statistical confidence interval or as authorization to trade.
+
+## Mandate and evaluation
+
+The $1 million scholarship reserve has a seven-year horizon and an annual review. The long-only, fully invested universe is BIL, IEF, LQD, and VT. BIL alone qualifies for the $100,000 minimum reserve. The modeled 6.50% net nominal return is a threshold. The search minimizes annualized volatility among feasible portfolios and uses equal weight, inverse volatility, and 40% LQD / 60% VT as transparent reference portfolios. [Lab 15 case and universe](https://github.com/shreyofficial2006-art/FIN43900-Lab15-Fall2026/blob/d6f417babe73fda4eb79f855be2c2ca0434023dd/LAB15_REPORT.md)
+
+Monthly arithmetic returns through September 2025 are annualized by multiplying by 12. The model subtracts an assumed 10 bp annual charge. Later evaluation compounds September 2025 to September 2026 adjusted-price changes with starting weights fixed, monthly fee accrual, and weight drift. The later window earned 9.31% net for the constrained mix versus 8.15% for the 40/60 reference, with month-end maximum drawdowns of 2.75% and 4.63%, respectively. Both comparison series use the same fee. The price snapshot was retrieved on October 22, 2026 and uses Yahoo Finance adjusted monthly prices. This is a chronological retrospective split with monthly execution approximations. The adjusted prices may include later corporate-action adjustments. [Source provenance](provenance.json) · [Executed results](RESULTS.md)
+
+The 36-month training stress selected 85% BIL / 15% VT and returned 5.47% net in the same later period. It moved each active weight by 30 points. A cost increase to 35 bp left the baseline weights intact while reducing the estimated net return to 6.51%, leaving almost no margin above the mandate. An increase in the reserve floor to 20% left the baseline unchanged because the 55% holding already clears it. A one-point drop in the BIL expected return raised the VT weight to 50% and volatility to 7.81%.
+
+## GS2 data card
+
+GS2 is the Federal Reserve Board's monthly average of business-day two-year Treasury constant-maturity yields in percent, not seasonally adjusted. FRED distributes the series and ALFRED preserves its vintages. The snapshots were retrieved November 17, 2026. The September 30, 2025 vintage ends with August 2025 at **3.70%**. The September 30, 2026 vintage ends with August 2026 at **4.22%**. Both snapshots show a release lag at the observation cutoff. Lab 17 separately verified that October 2026 appeared on November 2 and had zero changed shared values in its month-end comparison. Archive each decision using its actual vintage and leave a same-day release out if the publication time cannot be verified before a modeled trade. [FRED GS2](https://fred.stlouisfed.org/series/GS2) · [2025 archive](https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GS2&vintage_date=2025-09-30) · [2026 archive](https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GS2&vintage_date=2026-09-30) · [Lab 17 verification](https://github.com/shreyofficial2006-art/FIN43900-Lab17-Fall2026/blob/main/CHECKOUT.md)
+
+The 52-basis-point increase between the two eligible August readings informs monitoring of Treasury and credit duration risk. It does not drive portfolio weights, and the observed rate change provides no estimate of causal portfolio impact.
+
+## Committee approval conditions
+
+Monitor reserve weight, target feasibility after fees, and weight dispersion across windows at each review. Pause the paper pilot if BIL falls below 10%, the net return estimate falls below 6.50%, or the rate vintage cannot be reproduced. Reserve any approval to trade for weight changes under 20 percentage points across reasonable windows, another evaluation window, and agreement on the client's tolerable loss. Educational analysis.

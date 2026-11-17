@@ -1,0 +1,58 @@
+{
+  "requested_window": [
+    "2021-09",
+    "2026-09"
+  ],
+  "tickers": {
+    "BIL": {
+      "source": "Yahoo Finance chart API",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BIL?period1=1630454400&period2=1790812800&interval=1mo&events=div%2Csplits",
+      "history_url": "https://finance.yahoo.com/quote/BIL/history/",
+      "downloaded_utc": "2026-10-22T21:28:13.741915+00:00",
+      "field": "indicators.adjclose[0].adjclose",
+      "interval": "1mo",
+      "response_sha256": "4c269827fa0ac5fb6af5e2aee7604b9ca49c877b27d81bd286cd693e7ba68acf",
+      "first_month": "2021-09",
+      "last_month": "2026-09",
+      "observations": 61
+    },
+    "IEF": {
+      "source": "Yahoo Finance chart API",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/IEF?period1=1630454400&period2=1790812800&interval=1mo&events=div%2Csplits",
+      "history_url": "https://finance.yahoo.com/quote/IEF/history/",
+      "downloaded_utc": "2026-10-22T21:28:13.850312+00:00",
+      "field": "indicators.adjclose[0].adjclose",
+      "interval": "1mo",
+      "response_sha256": "6b6eaf5716fcc11d052a737eaab5560080ade36ec3d2cdb7b41345d8502f5337",
+      "first_month": "2021-09",
+      "last_month": "2026-09",
+      "observations": 61
+    },
+    "LQD": {
+      "source": "Yahoo Finance chart API",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/LQD?period1=1630454400&period2=1790812800&interval=1mo&events=div%2Csplits",
+      "history_url": "https://finance.yahoo.com/quote/LQD/history/",
+      "downloaded_utc": "2026-10-22T21:28:13.971132+00:00",
+      "field": "indicators.adjclose[0].adjclose",
+      "interval": "1mo",
+      "response_sha256": "957d9c623a4d23cbf8f08cb9eccfa6d6fad027dd7dd1a755970b92e094c4e9b6",
+      "first_month": "2021-09",
+      "last_month": "2026-09",
+      "observations": 61
+    },
+    "VT": {
+      "source": "Yahoo Finance chart API",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/VT?period1=1630454400&period2=1790812800&interval=1mo&events=div%2Csplits",
+      "history_url": "https://finance.yahoo.com/quote/VT/history/",
+      "downloaded_utc": "2026-10-22T21:28:14.089591+00:00",
+      "field": "indicators.adjclose[0].adjclose",
+      "interval": "1mo",
+      "response_sha256": "ee8fc835112a10e6723acd96ccb38c416b6d5d26981f3c8c448282fce35fa93e",
+      "first_month": "2021-09",
+      "last_month": "2026-09",
+      "observations": 61
+    }
+  },
+  "date_label": "Calendar month-end label for each Yahoo monthly observation; not a claim of trading on a weekend.",
+  "prices_sha256": "04410eb7d2c7fb88b97d4cb8266398a33c101f7f8dd43b63dfc7a494c972ccfc"
+}
