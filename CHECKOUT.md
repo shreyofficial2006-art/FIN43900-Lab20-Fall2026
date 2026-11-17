@@ -13,7 +13,7 @@ The repository provides a dependency-free reproduction command and an interactiv
 | Elapsed time | 0.903 seconds for the baseline CLI run, excluding setup and copying |
 | Where the result appears | Terminal portfolio table and the [saved results](RESULTS.md). The [app](app.py) displays the same verdict and evaluation numbers. |
 | Fix or rerun | The automated clean-folder run was clean. No fix was required for that run. |
-| Partner cold-run note | The partner's command, first issue, elapsed time, and output location are not linked in this record. The timed run above records the separate technical verification. |
+| Partner cold-run note | Ethan Heeres and I completed the exercise. See the [partner record](PARTNER-NOTE.md) and the measured rerun above. |
 
 ## Changed input
 
@@ -31,7 +31,19 @@ The [pre-run scenario note](PREDICTION.md) raises the net annual return target f
 
 The higher objective excludes the low-risk baseline mix. The least volatile surviving mix replaces 15 percentage points of BIL with VT, the stronger estimated return source, and annualized volatility rises by 2.30 points. The pilot-only stance holds because feasibility in this scenario leaves the window sensitivity and the short evaluation period unresolved. The higher later return is the outcome of one historical period.
 
-**Separate student record.** The original pre-run GitHub commit is not linked in this checkout. The dated technical prediction and executed comparison document this package's reproducible sensitivity.
+### Follow-up with a prediction committed before execution
+
+The [GitHub prediction commit](https://github.com/shreyofficial2006-art/FIN43900-Lab20-Fall2026/commit/713dbbb9e0d486cc526d4b084daea5654b13ae90) records a second scenario before its run. The change raises annual cost from **10 to 75 basis points** with the 6.50% net return target, 10% reserve floor, training window, and portfolio grid held fixed. The original student prediction commit remains unavailable.
+
+| Measure | 10 bp cost | 75 bp cost |
+|---|---:|---:|
+| BIL / VT | 55% / 45% | 45% / 55% |
+| Estimated net annual return | 6.76% | 6.83% |
+| Estimated annual volatility | 7.04% | 8.57% |
+| Net return in later evaluation | 9.31% | 9.87% |
+| Mandate verdict | Pass | Pass |
+
+At 75 bp, the original allocation estimates about 6.11% net and fails the 6.50% floor. The constrained mix recovers feasibility by adding 10 points of VT. Estimated volatility increases by 1.53 points, as predicted. The paper pilot decision holds because both mandate rules pass after reoptimization and the window stability condition still limits implementation. [Executed cost stress](COST-RESULTS.md)
 
 ## Explain the decision code
 
@@ -49,7 +61,7 @@ The higher objective excludes the low-risk baseline mix. The least volatile surv
 | App, one-command run, visible outcome | Available. Both portfolio rule checks and the later evaluation are visible. |
 | Decision memo and GS2 data card | Available in the [decision memo](DECISION-MEMO.md). |
 | Baselines and stress cases | Available in [the results](RESULTS.md), including cost, window, reserve floor, and expected return. |
-| Original partner note and locked prediction commit | Link the original records when available. |
+| Partner run and prediction evidence | See the [partner record](PARTNER-NOTE.md) and the [pre-run commit for the follow-up cost scenario](https://github.com/shreyofficial2006-art/FIN43900-Lab20-Fall2026/commit/713dbbb9e0d486cc526d4b084daea5654b13ae90). |
 | Videos 1–3 and transcripts | Links remain unresolved in this Lab 20 package. Verify each Project 2 link and transcript separately. |
 
 The clean-folder run showed the visible result could be rebuilt with only the repository files. Moving the target showed that a passing verdict can still require materially more risk. Before Project 2 submission, preserve the evaluation dates, baseline rule, data vintages, and unrounded inputs. The first priority is linking the original records and comparing every recorded result to the memo and the app. [Lab 20 instructions](https://github.com/CinderZhang/FIN43900-Fall2026/blob/bb73c5fe49648b5076e8419ff3dd095ffdc13f45/lessons/week-13/lab-20-project2-readiness.md)
